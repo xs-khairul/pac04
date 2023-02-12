@@ -272,7 +272,9 @@ defined( 'ABSPATH' ) || exit;
 					return ( $a['priority'] < $b['priority'] ) ? -1 : 1;
 				}
 			);
-			include_once 'views/template.php';
+			include_once '../../public/views/utility-story-template.php';
+
+			// include_once 'views/template.php';
 		}
 
 		/**
