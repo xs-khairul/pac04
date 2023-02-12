@@ -3,7 +3,7 @@ namespace Utility\Package\Stories;
 
 defined( 'ABSPATH' ) || exit;
 
-// if ( ! class_exists( '\Wpmet\Libs\Stories' ) ) :
+// if ( ! class_exists( '\Utility\Package\Stories' ) ) :
 
 	class Stories {
 

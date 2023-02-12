@@ -3,7 +3,7 @@ namespace Utility\Package\Notice;
 
 defined( 'ABSPATH' ) || exit;
 
-// if ( ! class_exists( '\Oxaim\Libs\Notice' ) ) :
+// if ( ! class_exists( '\Utility\Package\Notice' ) ) :
 
 class Notice {
 

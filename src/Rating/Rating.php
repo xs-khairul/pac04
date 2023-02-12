@@ -11,7 +11,7 @@ use Utility\Package\Notice as LibsNotice;
 
 
 
-// if ( ! class_exists( 'Wpmet\Libs\Rating' ) ) {
+// if ( ! class_exists( '\Utility\Package\Rating' ) ) {
 
 	/**
 	 * Asking client for rating and
