@@ -1,0 +1,19 @@
+{
+    "name": "xs-khairul/pac04",
+    "description": "abc",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "XsKhairul\\Pac04\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Khairul Hasib",
+            "email": "khairul@xpeedstudio.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
