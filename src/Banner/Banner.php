@@ -53,7 +53,7 @@ defined( 'ABSPATH' ) || exit;
 
 				if ( $content->start <= time() && time() <= $content->end ) {
 					$screen = get_current_screen();
-					if ( $this->is_correct_screen_to_show( $content->screen, $screen->id ) && class_exists( '\Utility\Package\Notice' ) ) {
+					if ( $this->is_correct_screen_to_show( $content->screen, $screen->id ) && class_exists( '\Utility\Package\Notice\Notice' ) ) {
 		
 						$inline_css       = '';
 						$banner_unique_id = ( ( isset( $content->data->unique_key ) && $content->data->unique_key != '' ) ? $content->data->unique_key : $content->id );
@@ -62,7 +62,7 @@ defined( 'ABSPATH' ) || exit;
 							$inline_css = ' style="' . $content->data->style_css . '"';
 						}
 
-						$instance = \Utility\Package\Notice::instance( 'wpmet-jhanda', $banner_unique_id )
+						$instance = \Utility\Package\Notice\Notice::instance( 'wpmet-jhanda', $banner_unique_id )
 						->set_dismiss( 'global', ( 3600 * 24 * 15 ) );
 					
 						if ( $content->type == 'banner' ) {
