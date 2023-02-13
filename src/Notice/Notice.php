@@ -325,7 +325,7 @@ class Notice {
 				<?php echo ( empty( $this->title ) ? '' : sprintf( '<div class="notice-main-title notice-vert-space">%s</div>', esc_html($this->title) ) ); ?>
 
 				<div class="notice-message notice-vert-space">
-				<?php echo wp_kses( $this->message, \ElementsKit_Lite\Utils::get_kses_array() ); ?>
+				<?php echo wp_kses( $this->message, \Utility\Package\Utils\Utils::get_kses_array() ); ?>
 				</div>
 
 				<?php if ( ! empty( $this->buttons ) ) : ?>
@@ -343,14 +343,14 @@ class Notice {
 				<?php endif; ?>
 
 			<?php else : ?>
-				<?php echo wp_kses( $this->html, \ElementsKit_Lite\Utils::get_kses_array() ); ?>
+				<?php echo wp_kses( $this->html, \Utility\Package\Utils\Utils::get_kses_array() ); ?>
 			<?php endif; ?>
 
 		</div>
 
 		<?php if ( false !== $this->dismissible ) : ?>
 			<button type="button" class="notice-dismiss">
-				<span class="screen-reader-text">x</span>
+				<span class="screen-reader-text">x#test-console-04</span>
 			</button>
 		<?php endif; ?>
 

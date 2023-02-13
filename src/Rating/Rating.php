@@ -1,12 +1,12 @@
 <?php
-
 namespace Utility\Package\Rating;
 
 defined( 'ABSPATH' ) || exit;
-
 use DateTime;
 // use Oxaim\Libs\Notice as LibsNotice;
-use Utility\Package\Notice as LibsNotice;
+use Utility\Package\Notice\Notice as LibsNotice;
+
+
 
 
 
