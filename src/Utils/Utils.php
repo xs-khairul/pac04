@@ -1,5 +1,5 @@
 <?php
-Utility\Package\Utils;
+namespace Utility\Package\Utils;
 
 defined('ABSPATH') || exit;
 /**
