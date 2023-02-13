@@ -2,7 +2,7 @@
 namespace Utility\Package\Notice;
 
 defined( 'ABSPATH' ) || exit;
-
+use Utility\Package\Utils\Utils as UtilsHelper;
 // if ( ! class_exists( '\Utility\Package\Notice' ) ) :
 
 class Notice {
@@ -325,7 +325,7 @@ class Notice {
 				<?php echo ( empty( $this->title ) ? '' : sprintf( '<div class="notice-main-title notice-vert-space">%s</div>', esc_html($this->title) ) ); ?>
 
 				<div class="notice-message notice-vert-space">
-				<?php echo wp_kses( $this->message, \Utility\Package\Utils\Utils::get_kses_array() ); ?>
+				<?php echo wp_kses( $this->message, UtilsHelper::get_kses_array() ); ?>
 				</div>
 
 				<?php if ( ! empty( $this->buttons ) ) : ?>
@@ -343,7 +343,7 @@ class Notice {
 				<?php endif; ?>
 
 			<?php else : ?>
-				<?php echo wp_kses( $this->html, \Utility\Package\Utils\Utils::get_kses_array() ); ?>
+				<?php echo wp_kses( $this->html, UtilsHelper::get_kses_array() ); ?>
 			<?php endif; ?>
 
 		</div>
