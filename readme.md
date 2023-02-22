@@ -3,16 +3,16 @@
 * Wepmet Plugin Utility helper package for Banner , Notice , Stories and Rating.
 * We made a composer package for these classes together.
 * By using this Helper package we are centralizing the feature of these Classes in a package manager
-  (so that any update or modifications of this functionalities globally no need give hand and keep dependencies on our plugins)
+  (so that any update or modifications of this functionalities globally no need to give hand or keep any dependencies on our plugins)
 
 
 
 ## Composer and making :
 
 composer is a php dependency manager which take cares of all dependencies of projects ,
-it take care of namespaces initializing and calling by mapping it in its autoload.php file we just need to specify the root dir in its jeson file call composer.json  
+it take care of namespaces initializing and calling by mapping it in its autoload.php file we just need to specify the root dir in its jeson file call composer.json we can also configure its dependencies here and its author and package name etc. 
 
-``composer.json ``
+``composer.json  file example``
 
 ```php 
 {
@@ -53,7 +53,7 @@ it take care of namespaces initializing and calling by mapping it in its autoloa
 
 `` composer require xs-khairul/pac04  ``
 
-## Using feature 
+## Using feature example 
 
 ```php 
 
@@ -66,8 +66,6 @@ it take care of namespaces initializing and calling by mapping it in its autoloa
 			->set_plugin( 'ElementsKit', 'https://wpmet.com/plugin/elementskit/' )
 			->set_api_url( 'https://api.wpmet.com/public/stories/' )
 			->call();
-			
-
 
 
 			/**
@@ -79,23 +77,6 @@ it take care of namespaces initializing and calling by mapping it in its autoloa
 			->set_api_url( 'https://api.wpmet.com/public/jhanda' )
 			->set_plugin_screens( 'edit-elementskit_template' )
 			->set_plugin_screens( 'toplevel_page_elementskit' )
-			->call();
-			// \Utility\Package\Banner\Banner::test_fn();
-
-			/**
-			 *  Ask for rating
-			 *  A rating notice will appear depends on 
-			 *  @set_first_appear_day methods 
-			 */
-			\Utility\Package\Rating\Rating::instance( 'elementskit-lite' )
-			->set_plugin( 'ElementsKit', 'https://wpmet.com/wordpress.org/rating/elementskit' )
-			->set_plugin_logo( 'https://ps.w.org/elementskit-lite/assets/icon-128x128.gif', 'width:150px !important' )
-			->set_allowed_screens( 'edit-elementskit_template' )
-			->set_allowed_screens( 'toplevel_page_elementskit' )
-			->set_allowed_screens( 'elementskit_page_elementskit-lite_get_help' )
-			->set_priority( 10 )
-			->set_first_appear_day( 0 )
-			->set_condition( true )
 			->call();
 
 
