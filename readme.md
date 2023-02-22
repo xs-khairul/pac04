@@ -1,6 +1,6 @@
 #Over View of package 
 
-* Wepmet Plugin Utility helper package for Banner , Notice , Stories and Rating.
+* Wpmet Plugin Utility helper package for Banner , Notice , Stories and Rating.
 * We made a composer package for these classes together.
 * By using this Helper package we are centralizing the feature of these Classes in a package manager
   (so that any update or modifications of this functionalities globally no need to give hand or keep any dependencies on our plugins)
