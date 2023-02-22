@@ -38,7 +38,7 @@ it take care of namespaces initializing and calling by mapping it in its autoloa
     },
     "require-dev": {
      
-    }
+    },
 
 }
 ```
