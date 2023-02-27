@@ -16,35 +16,40 @@ it take care of namespaces initializing and calling by mapping it in its autoloa
 
 ```php 
 {
-    "name": "xs-khairul/pac04",
-    "description": "abc",
+    "name": "wpmet/utility-package",
+    "description": "Utility packages for plugin, It will be used to serve Stories, Notice , Banner and Ratings",
     "type": "library",
-    "license": "MIT",
+    "license": "GPL",
     "autoload": {
         "psr-4": {
-            "Utility\\Package\\": "src/"
+            "Wpmet\\UtilityPackage\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "Khairul Hasib",
-            "email": "khairul@xpeedstudio.com"
+            "name": "XpeedStudio",
+            "email": "info@xpeedstudio.com"
+        },
+        {
+            "name": "Wpmet",
+            "email": "info@xpeedstudio.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
-         
+         "php": ">=7.4",
+         "vendor/package": ">=1.0.1"
 
     },
     "require-dev": {
-     
-    },
+
+    }
 
 }
 ```
 ### explanation 
 
-* namespace "Utility\\Package\\" point to the src/ folder directly by composer when it calls 
+* namespace "Wpmet\\UtilityPackage\\" point to the src/ folder directly by composer when it calls 
 * require if any other package needed for this project.
 * required-dev if any other package needed for this project for only development purpose.
 
@@ -60,7 +65,7 @@ it take care of namespaces initializing and calling by mapping it in its autoloa
 /**
 			 * Show WPMET stories widget in dashboard
 			 */
-			\Utility\Package\Stories\Stories::instance( 'elementskit-lite' )
+			\Wpmet\UtilityPackage\Stories\Stories::instance( 'elementskit-lite' )
 			// ->is_test(true)
 			->set_filter( $filter_string )
 			->set_plugin( 'ElementsKit', 'https://wpmet.com/plugin/elementskit/' )
@@ -71,7 +76,7 @@ it take care of namespaces initializing and calling by mapping it in its autoloa
 			/**
 			 * Show WPMET banner (codename: jhanda)
 			 */
-			\Utility\Package\Banner\Banner::instance( 'elementskit-lite' )
+			\Wpmet\UtilityPackage\Banner\Banner::instance( 'elementskit-lite' )
 			// ->is_test(true)
 			->set_filter( ltrim( $filter_string, ',' ) )
 			->set_api_url( 'https://api.wpmet.com/public/jhanda' )
