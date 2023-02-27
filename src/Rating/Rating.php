@@ -1,17 +1,17 @@
 <?php
-namespace Utility\Package\Rating;
+namespace Wpmet\UtilityPackage\Rating;
 
 defined( 'ABSPATH' ) || exit;
 use DateTime;
 // use Oxaim\Libs\Notice as LibsNotice;
-use Utility\Package\Notice\Notice as LibsNotice;
+use Wpmet\UtilityPackage\Notice\Notice as LibsNotice;
 
 
 
 
 
 
-// if ( ! class_exists( '\Utility\Package\Rating' ) ) {
+// if ( ! class_exists( '\Wpmet\UtilityPackage\Rating' ) ) {
 
 	/**
 	 * Asking client for rating and

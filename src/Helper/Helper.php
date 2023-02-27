@@ -1,5 +1,5 @@
 <?php
-namespace Utility\Package\Utils;
+namespace Wpmet\UtilityPackage\Helper;
 
 defined('ABSPATH') || exit;
 /**
@@ -8,7 +8,7 @@ defined('ABSPATH') || exit;
  * @since 1.0.0
  */
 
-class Utils
+class Helper
 {
    
     public static function kses($raw)

@@ -1,26 +1,31 @@
 {
-    "name": "xs-khairul/pac04",
-    "description": "abc",
+    "name": "wpmet/utility-package",
+    "description": "Utility packages for plugin, It will be used to serve Stories, Notice , Banner and Ratings",
     "type": "library",
-    "license": "MIT",
+    "license": "GPL",
     "autoload": {
         "psr-4": {
-            "Utility\\Package\\": "src/"
+            "Wpmet\\UtilityPackage\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "Khairul Hasib",
-            "email": "khairul@xpeedstudio.com"
+            "name": "XpeedStudio",
+            "email": "info@xpeedstudio.com"
+        },
+        {
+            "name": "Wpmet",
+            "email": "info@xpeedstudio.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
-         
+         "php": ">=7.4",
+         "vendor/package": ">=1.0.1"
 
     },
     "require-dev": {
-     
+
     }
 
 }

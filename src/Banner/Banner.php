@@ -1,9 +1,9 @@
 <?php
-namespace Utility\Package\Banner;
+namespace Wpmet\UtilityPackage\Banner;
 
 defined( 'ABSPATH' ) || exit;
 
-// if ( ! class_exists( '\Utility\Package\Banner' ) ) :
+// if ( ! class_exists( '\Wpmet\UtilityPackage\Banner' ) ) :
 
 	class Banner {
 
@@ -53,7 +53,7 @@ defined( 'ABSPATH' ) || exit;
 
 				if ( $content->start <= time() && time() <= $content->end ) {
 					$screen = get_current_screen();
-					if ( $this->is_correct_screen_to_show( $content->screen, $screen->id ) && class_exists( '\Utility\Package\Notice\Notice' ) ) {
+					if ( $this->is_correct_screen_to_show( $content->screen, $screen->id ) && class_exists( '\Wpmet\UtilityPackage\Notice\Notice' ) ) {
 		
 						$inline_css       = '';
 						$banner_unique_id = ( ( isset( $content->data->unique_key ) && $content->data->unique_key != '' ) ? $content->data->unique_key : $content->id );
@@ -62,7 +62,7 @@ defined( 'ABSPATH' ) || exit;
 							$inline_css = ' style="' . $content->data->style_css . '"';
 						}
 
-						$instance = \Utility\Package\Notice\Notice::instance( 'wpmet-jhanda', $banner_unique_id )
+						$instance = \Wpmet\UtilityPackage\Notice\Notice::instance( 'wpmet-jhanda', $banner_unique_id )
 						->set_dismiss( 'global', ( 3600 * 24 * 15 ) );
 					
 						if ( $content->type == 'banner' ) {
