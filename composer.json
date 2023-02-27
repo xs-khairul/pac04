@@ -20,8 +20,7 @@
     ],
     "minimum-stability": "stable",
     "require": {
-         "php": ">=7.4",
-         "vendor/package": ">=1.0.1"
+         "php": ">=7.4"
 
     },
     "require-dev": {
