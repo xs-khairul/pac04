@@ -16,10 +16,11 @@ it take care of namespaces initializing and calling by mapping it in its autoloa
 
 ```php 
 {
-    "name": "wpmet/utility-package",
-    "description": "Utility packages for plugin, It will be used to serve Stories, Notice , Banner and Ratings",
+    "name": "xs-khairul/pac04",
+    "description": "Utility packages for Wpmet plugin, It will be used to serve Stories, Notice , Banner and Ratings",
+    "version": "v1.0.0",
     "type": "library",
-    "license": "GPL",
+    "license": "GPL-3.0-only",
     "autoload": {
         "psr-4": {
             "Wpmet\\UtilityPackage\\": "src/"
@@ -37,8 +38,6 @@ it take care of namespaces initializing and calling by mapping it in its autoloa
     ],
     "minimum-stability": "stable",
     "require": {
-         "php": ">=7.4",
-         "vendor/package": ">=1.0.1"
 
     },
     "require-dev": {
