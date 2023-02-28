@@ -1,7 +1,7 @@
 {
     "name": "xs-khairul/pac04",
     "description": "Utility packages for Wpmet plugin, It will be used to serve Stories, Notice , Banner and Ratings",
-    "version": "v1.0.1",
+    "version": "v1.1.1",
     "type": "library",
     "license": "GPL-3.0-only",
     "autoload": {
