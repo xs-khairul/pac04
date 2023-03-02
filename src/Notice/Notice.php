@@ -130,7 +130,7 @@ class Notice {
 	 * @return string
 	 */
 	public function get_version() {
-		return $this->script_version;
+		return UtilsHelper :: get_pac_version();
 	}
 
 	/**
