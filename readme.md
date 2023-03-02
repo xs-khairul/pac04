@@ -23,7 +23,7 @@ it take care of namespaces initializing and calling by mapping it in its autoloa
     "license": "GPL-3.0-only",
     "autoload": {
         "psr-4": {
-            "Wpmet\\UtilityPackage\\": "src/"
+            "Wpmett\\UtilityPackage\\": "src/"
         }
     },
     "authors": [
@@ -48,7 +48,7 @@ it take care of namespaces initializing and calling by mapping it in its autoloa
 ```
 ### explanation 
 
-* namespace "Wpmet\\UtilityPackage\\" point to the src/ folder directly by composer when it calls 
+* namespace "Wpmett\\UtilityPackage\\" point to the src/ folder directly by composer when it calls 
 * require if any other package needed for this project.
 * required-dev if any other package needed for this project for only development purpose.
 
@@ -64,7 +64,7 @@ it take care of namespaces initializing and calling by mapping it in its autoloa
 /**
 			 * Show WPMET stories widget in dashboard
 			 */
-			\Wpmet\UtilityPackage\Stories\Stories::instance( 'elementskit-lite' )
+			\Wpmett\UtilityPackage\Stories\Stories::instance( 'elementskit-lite' )
 			// ->is_test(true)
 			->set_filter( $filter_string )
 			->set_plugin( 'ElementsKit', 'https://wpmet.com/plugin/elementskit/' )
@@ -75,7 +75,7 @@ it take care of namespaces initializing and calling by mapping it in its autoloa
 			/**
 			 * Show WPMET banner (codename: jhanda)
 			 */
-			\Wpmet\UtilityPackage\Banner\Banner::instance( 'elementskit-lite' )
+			\Wpmett\UtilityPackage\Banner\Banner::instance( 'elementskit-lite' )
 			// ->is_test(true)
 			->set_filter( ltrim( $filter_string, ',' ) )
 			->set_api_url( 'https://api.wpmet.com/public/jhanda' )

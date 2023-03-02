@@ -1,5 +1,5 @@
 <?php
-namespace Wpmet\UtilityPackage\Helper;
+namespace Wpmett\UtilityPackage\Helper;
 
 defined('ABSPATH') || exit;
 /**

@@ -6,7 +6,7 @@
     "license": "GPL-3.0-only",
     "autoload": {
         "psr-4": {
-            "Wpmet\\UtilityPackage\\": "src/"
+            "Wpmett\\UtilityPackage\\": "src/"
         }
     },
     "authors": [
@@ -19,7 +19,7 @@
             "email": "info@xpeedstudio.com"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {
 
     },

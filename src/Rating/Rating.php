@@ -1,17 +1,17 @@
 <?php
-namespace Wpmet\UtilityPackage\Rating;
+namespace Wpmett\UtilityPackage\Rating;
 
 defined( 'ABSPATH' ) || exit;
 use DateTime;
 // use Oxaim\Libs\Notice as LibsNotice;
-use Wpmet\UtilityPackage\Notice\Notice as LibsNotice;
+use Wpmett\UtilityPackage\Notice\Notice as LibsNotice;
 
 
 
 
 
 
-// if ( ! class_exists( '\Wpmet\UtilityPackage\Rating' ) ) {
+// if ( ! class_exists( '\Wpmett\UtilityPackage\Rating' ) ) {
 
 	/**
 	 * Asking client for rating and
@@ -72,7 +72,7 @@ use Wpmet\UtilityPackage\Notice\Notice as LibsNotice;
 		/**
 		 * Get vesrion of $this
 		 * 
-		 * @return \Wpmet\Rating\Rating
+		 * @return \Wpmett\Rating\Rating
 		 */
 		public function get_version() {
 			return $this->script_version;

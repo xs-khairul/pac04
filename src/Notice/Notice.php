@@ -1,9 +1,9 @@
 <?php
-namespace Wpmet\UtilityPackage\Notice;
+namespace Wpmett\UtilityPackage\Notice;
 
 defined( 'ABSPATH' ) || exit;
-use Wpmet\UtilityPackage\Helper\Helper as UtilsHelper;
-// if ( ! class_exists( '\Wpmet\UtilityPackage\Notice' ) ) :
+use Wpmett\UtilityPackage\Helper\Helper as UtilsHelper;
+// if ( ! class_exists( '\Wpmett\UtilityPackage\Notice' ) ) :
 
 class Notice {
 

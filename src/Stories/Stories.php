@@ -1,9 +1,9 @@
 <?php
-namespace Wpmet\UtilityPackage\Stories;
+namespace Wpmett\UtilityPackage\Stories;
 
 defined( 'ABSPATH' ) || exit;
 
-// if ( ! class_exists( '\Wpmet\UtilityPackage\Stories' ) ) :
+// if ( ! class_exists( '\Wpmett\UtilityPackage\Stories' ) ) :
 
 	class Stories {
 
